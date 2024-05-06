@@ -1,0 +1,29 @@
+.hero {
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px #CDCDCD;
+  max-width: 744px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  height: 110px;
+  
+  &__image {
+    padding: 10px;
+  }
+
+  &__info {
+    flex-grow: 1;
+    color: #161718;  
+    padding-top: 15px;
+    padding-left: 4px;
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  &__details {
+    font-size: 12px;
+  }  
+}

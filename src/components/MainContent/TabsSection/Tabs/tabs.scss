@@ -1,0 +1,180 @@
+// tab Заметки
+.notes {
+  width: 100%;
+  
+  &__note {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+  
+  &__note-text {
+    max-width: 680px;
+    color: #161718;
+    line-height: 24px;
+  }
+  
+  &__note-date {
+    color: #616F82;
+    margin-right: 5px;
+  }  
+
+  &__note-btn {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+  }
+
+  &__map {
+    margin-top: 5px;
+    border: 5px solid #CDCDCD;
+    border-radius: 4px;
+  }
+}
+
+// tab Консультации
+.consultation {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  border: 1px solid #CDCDCD;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  &:hover {
+    border-color: #4198C5;  
+    cursor: pointer; 
+  }
+
+  &:hover &__icon {
+    background-color: #4198C5;    
+  }
+
+  &:hover &__icon svg path{
+    fill: #ffffff;    
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F1F2F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__details {  
+    margin-left: 10px;
+  }
+
+  &__title {
+    font-size: 16px;
+    color: #161718;
+    margin-bottom: 14px;
+    font-weight: normal;
+  }
+
+  &__date {
+    color: #616F82;
+  }
+
+  &__status {
+    position: absolute;
+    bottom: 7px;
+    right: 11px;
+    color: #FF0000;
+  }  
+}
+
+// tab Видео
+.video-note {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  border: 1px solid #CDCDCD;
+  border-radius: 4px;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  &__img {
+    width: 82px;
+    height: 46px;
+  }
+
+  &__details {
+    width: 430px;
+    margin-left: 10px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: normal;
+    width: 430px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+    color: #161718;
+    margin-top: -5px;
+    margin-bottom: 14px;
+  }
+
+  &__author {
+    color: #616F82;
+  }
+  
+  &__date {
+    position: absolute;
+    bottom: 7px;
+    right: 11px;
+    color: #616F82;
+  }
+}
+
+// tab Мероприятия
+.event-note {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  color: #161718;
+  border: 1px solid #CDCDCD;
+  border-radius: 4px;
+
+  &__img{
+    width: 82px;
+    height: 46px;
+    border-radius: 4px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+
+  &__details-items {
+    font-size: 12px;
+    display: flex;
+    gap: 15px;
+  }
+
+  &__detail-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: baseline;
+  }
+}

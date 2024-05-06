@@ -1,0 +1,28 @@
+.workpiece {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 10px 20px 10px 8px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 4px #b6b6b6;
+  border-left: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+
+  &:hover{
+    border-left: 2px solid #4198C5;
+    cursor: pointer;
+  }
+
+  &__name {
+    flex-grow: 1;
+    font-size: 16px;
+    padding-left: 10px;
+    color: #161718;
+  } 
+}
+
+.workpiece-active{
+  background-color: #F1F2F3;
+}

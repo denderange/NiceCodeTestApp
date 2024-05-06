@@ -1,0 +1,26 @@
+.counter-users{
+  width: 366px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px 5px 15px;
+
+  &__count {
+    display: block;
+    font-size: 12px;
+    padding: 2px 4px;
+    color: #ffffff;
+    border-radius: 10px;
+    background-color: #616F82;
+  }
+
+  &__select {
+    font-size: 14px;
+    color: #616F82;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      color: coral;
+    }
+  }  
+}

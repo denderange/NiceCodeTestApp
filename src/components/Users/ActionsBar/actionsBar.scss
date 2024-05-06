@@ -1,0 +1,26 @@
+.actionsBar{
+  width: 366px;  
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px #CDCDCD;
+  padding: 13px 10px;
+  
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__actions{
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.active-searchbar{
+  display: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  padding: 0;
+}
